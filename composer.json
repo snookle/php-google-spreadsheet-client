@@ -1,5 +1,5 @@
 {
-    "name": "asimlqt/php-google-spreadsheet-client",
+    "name": "snook/php-google-spreadsheet-client",
     "type": "library",
     "description": "Google Spreadsheet PHP Client",
     "keywords": ["google", "spreadsheet"],
