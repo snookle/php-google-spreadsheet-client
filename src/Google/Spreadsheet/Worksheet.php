@@ -194,7 +194,8 @@ class Worksheet
         $entry->addChild("xmlns:gs:rowCount", (int) $rowCount);
         $entry->addChild("xmlns:gs:colCount", (int) $colCount);
 
-        ServiceRequestFactory::getInstance()->put($this->getEditUrl(), $entry->asXML());
+        $ret = ServiceRequestFactory::getInstance()->put($this->getEditUrl(), $entry->asXML());
+        $this->xml = new \SimpleXMLElement($ret);
     }
 
     /**
